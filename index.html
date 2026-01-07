@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客户关系管理(CRM) | 深圳运物云物流科技有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Using Google Fonts for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <img src="https://img.icons8.com/color/48/list--v1.png" alt="logo">
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li data-page="home"><i class="fas fa-home"></i> <span>首页</span></li>
+                    <li data-page="my-orders"><i class="fas fa-file-invoice"></i> <span>我的订单</span></li>
+                    <li class="has-submenu">
+                        <div class="submenu-toggle"><i class="fas fa-shopping-cart"></i> <span>订单</span> <i
+                                class="fas fa-chevron-down arrow"></i></div>
+                    </li>
+                    <li class="has-submenu">
+                        <div class="submenu-toggle"><i class="fas fa-user-friends"></i> <span>客户</span> <i
+                                class="fas fa-chevron-down arrow"></i></div>
+                    </li>
+                    <li class="has-submenu">
+                        <div class="submenu-toggle"><i class="fas fa-file-alt"></i> <span>报价</span> <i
+                                class="fas fa-chevron-down arrow"></i></div>
+                    </li>
+                    <li class="has-submenu">
+                        <div class="submenu-toggle"><i class="fas fa-th-large"></i> <span>其它</span> <i
+                                class="fas fa-chevron-down arrow"></i></div>
+                    </li>
+                    <li class="has-submenu active open">
+                        <div class="submenu-toggle"><i class="fas fa-warehouse"></i> <span>仓库</span> <i
+                                class="fas fa-chevron-up arrow"></i></div>
+                        <ul class="submenu">
+                            <li data-page="inventory-query">库存查询</li>
+                            <li data-page="packing-task">打包作业</li>
+                            <li data-page="report-list" class="active">成品报单</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-container">
+            <!-- Top Header -->
+            <header class="header">
+                <div class="header-title">
+                    <span class="system-name">客户关系管理(CRM)</span>
+                    <span class="divider">|</span>
+                    <span class="company-name">深圳运物云物流科技有限公司</span>
+                </div>
+                <div class="header-actions">
+                    <div class="notification">
+                        <i class="far fa-bell"></i>
+                        <span class="badge">99+</span>
+                        <span class="label">邀请注册</span>
+                    </div>
+                    <button class="btn btn-primary btn-switch">切换管理系统</button>
+                    <div class="user-profile">
+                        <img src="https://img.icons8.com/color/48/user-male-circle--v1.png" alt="avatar" class="avatar">
+                        <span class="username">LUO</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content Wrapper -->
+            <div id="page-content" class="page-content">
+                <!-- Content will be injected here by main.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
